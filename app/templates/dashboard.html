@@ -158,8 +158,8 @@
                     </div>
                 </div>
 
-                <h4 class="fw-bold mb-1">{{ peer.name }}</h4>
-                <div class="ip-text mb-4">IP: {{ peer.ip }}</div>
+                <h4 class="fw-bold mb-1">{{ peer.developer_name }}</h4>
+                <div class="ip-text mb-4">IP: {{ peer.assigned_ip }}</div>
 
                 <div class="d-flex justify-content-between align-items-center">
                     {% if peer.status == 'Connected' %}
@@ -168,7 +168,7 @@
                         <span class="status-offline">OFFLINE</span>
                     {% endif %}
                     <div class="usage-text">
-                        <i class="bi bi-arrow-down-up me-1"></i> {{ peer.usage }}
+                        <i class="bi bi-arrow-down-up me-1"></i> {{ peer.device_name }}
                     </div>
                 </div>
             </div>
